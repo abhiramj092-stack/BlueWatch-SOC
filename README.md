@@ -66,22 +66,22 @@ BlueWatch SOC is a home-lab Security Operations Center built from scratch to pra
 ### 1. Overview Dashboard — Agent Status & Alert Severity
 Live agent connectivity status and a 24-hour breakdown of alerts by severity, alongside quick links to Endpoint Security and Threat Intelligence modules.
 
-![Wazuh Overview Dashboard](docs/screenshots/01-wazuh-overview-dashboard.jpeg)
+![Wazuh Overview Dashboard](screenshots/01-wazuh-overview-dashboard.jpeg)
 
 ### 2. Attack Simulation on Monitored Endpoint
 Commands run on the Kali agent to generate telemetry for the detection pipeline: config edits, service restarts, a monitored file write, and outbound traffic with a flagged user-agent string.
 
-![Attack Simulation Terminal](docs/screenshots/02-kali-attack-simulation-terminal.jpeg)
+![Attack Simulation Terminal](screenshots/02-kali-attack-simulation-terminal.jpeg)
 
 ### 3. MITRE ATT&CK — Correlated Events
 Alerts automatically enriched with MITRE tactic and technique IDs (e.g. `T1548.003`, `T1078`, `T1565.001`), enabling tactic-level triage instead of raw rule IDs.
 
-![MITRE ATT&CK Events](docs/screenshots/03-mitre-attck-events.jpeg)
+![MITRE ATT&CK Events](screenshots/03-mitre-attck-events.jpeg)
 
 ### 4. Threat Hunting Dashboard
 Aggregated view of alert-level evolution over time and the top MITRE ATT&CK techniques observed across the environment.
 
-![Threat Hunting Dashboard](docs/screenshots/04-threat-hunting-dashboard.jpeg)
+![Threat Hunting Dashboard](screenshots/04-threat-hunting-dashboard.jpeg)
 
 ### 5. Threat Hunting — Raw Event Table
 Full event list showing rule descriptions triggered during the exercise — FIM checksum changes, Auditd command executions, Suricata network alerts, and PAM session/sudo events.
@@ -91,13 +91,13 @@ Full event list showing rule descriptions triggered during the exercise — FIM 
 ### 6. Discover — FIM & Auditd Log Detail
 Deep-dive into a single FIM alert showing full `syscheck` fields (before/after hash, permissions, ownership) next to a raw Auditd `SYSCALL` record.
 
-![Discover FIM & Audit Logs](docs/screenshots/06-discover-fim-audit-logs.jpeg)
+![Discover FIM & Audit Logs](screenshots/06-discover-fim-audit-logs.jpeg)
 
 ## 🚀 Getting Started
 
 Full step-by-step setup (Docker install, Wazuh deployment, agent enrollment, Suricata/Auditd config) lives in:
 
-➡️ **[docs/installation.md](docs/installation.md)**
+➡️ **[installation.md](installation.md)**
 
 ## 💡 Challenges & Lessons Learned
 
